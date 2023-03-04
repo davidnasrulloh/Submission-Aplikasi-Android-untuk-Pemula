@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".About">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_david"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/img_david"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/my_name"
+            android:textColor="@color/purple_700"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/img_david"
+            app:layout_constraintStart_toStartOf="@+id/img_david"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/my_email"
+            android:textColor="@color/purple_700"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/img_david"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="@+id/img_david"
+            app:layout_constraintTop_toBottomOf="@+id/img_david" />
+
+        <TextView
+            android:id="@+id/tv_social_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/social_media"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tableLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_social_media">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    style="@style/ImageSpec"
+                    android:src="@drawable/linkedin1"/>
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/linkedin" />
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/value_linkedin" />
+                <Button
+                    android:id="@+id/btn_to_linkedin"
+                    style="@style/ButtonView"
+                    android:text="@string/view"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    style="@style/ImageSpec"
+                    android:src="@drawable/instagram"/>
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/instagram" />
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/value_instagram" />
+
+                <Button
+                    android:id="@+id/btn_to_instagram"
+                    style="@style/ButtonView"
+                    android:text="@string/view"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp">
+
+                <ImageView
+                    style="@style/ImageSpec"
+                    android:src="@drawable/github"/>
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/github" />
+                <TextView
+                    style="@style/TextSpec.Value"
+                    android:text="@string/value_github" />
+
+                <Button
+                    android:id="@+id/btn_to_github"
+                    style="@style/ButtonView"
+                    android:text="@string/view"/>
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

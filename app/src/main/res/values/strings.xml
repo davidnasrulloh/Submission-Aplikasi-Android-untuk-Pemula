@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SM-David_AndroidPemula</string>
+
+    <string name="profile">Profile</string>
+
+    <string name="my_name">David Nasrulloh</string>
+    <string name="my_email">davidkrb52@gmail.com</string>
+    <string name="version">versi 1.0</string>
+
+    <!--    menu-->
+
+    <string name="menu_about">About</string>
+    <string name="menu_list">View List</string>
+    <string name="menu_grid">View Grid</string>
+
+
+    <!--    detial-->
+    <string name="title_detail">Disusun oleh \nLevel \nTeknologi \nEstimasi \nWebsite \n \nModul </string>
+    <string name="detail_content">Detail Content</string>
+    <string name="deskripsi">Deskripsi</string>
+
+
+    <string name="academy_name">Nama Academy</string>
+    <string name="academy_rate">Rate Academy</string>
+    <string name="academy_detail">Detail Academy</string>
+    <string name="academy_overview">Deskripsi</string>
+    <string name="social_media">Social Media</string>
+    <string name="linkedin">Linkedin</string>
+    <string name="value_linkedin">davidnasrulloh</string>
+    <string name="instagram">Linkedin</string>
+    <string name="value_instagram">davidnasrulloh_</string>
+    <string name="github">Gihtub</string>
+    <string name="value_github">davidnasrulloh</string>
+    <string name="view">view</string>
+</resources>
